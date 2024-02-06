@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Viewer</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            transition: background-color 0.5s;
+        }
+
+        #colorBox {
+            width: 200px;
+            height: 200px;
+            border: 2px solid #000;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        #colorInput {
+            padding: 5px;
+            font-size: 16px;
+            margin-left: 10px;
+        }
+
+        #deleteButton {
+            font-size: 16px;
+            cursor: pointer;
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="colorBox">Type a color name</div>
+    <input type="text" id="colorInput" placeholder="Enter a color name">
+    <button id="deleteButton">Delete Input</button>
+    <script>
+        const colorBox = document.getElementById("colorBox");
+        const colorInput = document.getElementById("colorInput");
+        const deleteButton = document.getElementById("deleteButton");
+        let isBackgroundDefault = true; // Flag to track background color state
+
+        colorInput.addEventListener("input", function () {
+            colorBox.textContent = colorInput.value;
+            colorBox.style.backgroundColor = colorInput.value;
+        });
+
+        colorBox.addEventListener("click", function () {
+            if (isBackgroundDefault) {
+                document.body.style.backgroundColor = colorInput.value;
+                isBackgroundDefault = false;
+            } else {
+                document.body.style.backgroundColor = ""; // Set it to the default (empty)
+                isBackgroundDefault = true;
+            }
+        });
+
+        deleteButton.addEventListener("click", function () {
+            colorInput.value = ""; // Clear the input field
+            colorBox.textContent = "Type a color name";
+            colorBox.style.backgroundColor = ""; // Clear the color box
+            document.body.style.backgroundColor = ""; // Clear the background color
+        });
+    </script>
+</body>
+
+</html

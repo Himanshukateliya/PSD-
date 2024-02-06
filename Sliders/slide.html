@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            /* border: 2px solid black; */
+        }
+
+        .col_50 {
+            width: 40%;
+        }
+
+        .col_10 {
+            width: 10%;
+        }
+
+        .col_80 {
+            width: 80%;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+
+        .justify {
+            justify-content: space-between;
+        }
+
+        .align {
+            align-items: center;
+        }
+
+        .text-align {
+            text-align: center;
+        }
+
+        .container {
+            width: 1300px;
+            margin: 0 auto;
+
+        }
+
+        /* --section 4-- */
+        .sec-4 {
+            background-color: #ebe6fb;
+            padding: 100px 0;
+        }
+
+        .sec-4-arrow i {
+            border: 1px solid #4012cb;
+            color: #4012cb;
+            font-size: 50px;
+            padding: 10px;
+        }
+
+        .sec-4-box {
+            border: 1px solid #4012cb;
+            text-align: center;
+            padding: 60px;
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        .sec-4-box i {
+            color: #4012cb;
+            font-size: 70px;
+            padding: 20px 0;
+        }
+
+        .sec-4-box p {
+            border-top: 1px solid #4012cb;
+            text-align: justify;
+            padding: 30px 0;
+            font-size: 10px;
+            font-family: 'lato';
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <section class="sec-4">
+        <div class="container">
+            <div class="row justify align">
+                <div class="col_10">
+                    <div class="sec-4-arrow">
+                        <button class="prev">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="col_80">
+                    <div class="row justify align slider">
+                        <div class="col_50">
+                            <div class="sec-4-box">
+                                <i class="fa-solid fa-water"></i>
+                                <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                    nostrud
+                                    exercitation ullam co labo ris nisi ut aliquip ex ea commodo consequat. Duis
+                                    aute irure
+                                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                    pariatur.
+                                </p>
+                                <button>Learn More</button>
+                            </div>
+                        </div>
+                        <div class="col_50">
+                            <div class="sec-4-box">
+                                <i class="fa-solid fa-water"></i>
+                                <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                    nostrud
+                                    exercitation ullam co labo ris nisi ut aliquip ex ea commodo consequat. Duis
+                                    aute irure
+                                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                    pariatur.
+                                </p>
+                                <button>Learn More</button>
+                            </div>
+                        </div>
+                        <div class="col_50">
+                            <div class="sec-4-box">
+                                <i class="fa-solid fa-water"></i>
+                                <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                    nostrud
+                                    exercitation ullam co labo ris nisi ut aliquip ex ea commodo consequat. Duis
+                                    aute irure
+                                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                    pariatur.
+                                </p>
+                                <button>Learn More</button>
+                            </div>
+                        </div>
+                        <div class="col_50">
+                            <div class="sec-4-box">
+                                <i class="fa-solid fa-water"></i>
+                                <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                    nostrud
+                                    exercitation ullam co labo ris nisi ut aliquip ex ea commodo consequat. Duis
+                                    aute irure
+                                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                    pariatur.
+                                </p>
+                                <button>Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col_10">
+                    <div class="sec-4-arrow">
+                        <button class="next">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.slider').slick({
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                arrows: true,
+                dots: false,
+                prevArrow: $('.prev'),
+                nextArrow: $('.next'),
+                speed: 300,
+                infinite: true,
+                autoplaySpeed: 2000,
+                autoplay: true,
+                responsive: [
+                    {
+                        breakpoint: 991,
+                        settings: {
+                            slidesToShow: 2,
+                        }
+                    },
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 1,
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+
+</body>
+
+</html>
